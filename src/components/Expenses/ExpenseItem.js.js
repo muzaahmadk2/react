@@ -8,6 +8,7 @@ import Card from "../UI/Card";
 function ExpenseItem(props) {
 
   return (
+    <li>
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <ExpenseDetails
@@ -16,6 +17,7 @@ function ExpenseItem(props) {
         loc={props.loc}
       />
     </Card>
+    </li>
   );
 }
 export default ExpenseItem;
